@@ -49,8 +49,15 @@ Exemple:
 
 
 def kg_to_lb(kg):
-    # Write here your code
-    pass
+    # Comprovem que el valor sigui numèric
+    if not isinstance(kg, (int, float)):
+        raise TypeError("The value must be a number")
+    # Comprovem que el valor sigui positiu
+    if kg <= 0:
+        raise ValueError("The value must be grater than 0")
+    # 1 kg equival a 2.20462 libras
+    return round(kg * 2.20462, 2)
+    
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
