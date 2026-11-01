@@ -60,11 +60,17 @@ L'any a comprovar serà '2000', de manera que:
 """
 
 
-def check_leap_year(
-    year):
-    # Write here your code
-    pass
-
+def check_leap_year(year):
+    """Retorna True si es un any bisiesto o no"""
+  if year % 4 != 0:
+    return False
+  elif year % 100 != 0:
+    return True
+  elif year % 40 == 0:
+    return True
+  else:
+    return False 
+    
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el
 # script
