@@ -70,8 +70,6 @@ def check_leap_year(year):
         return True
     else:
         return False
-    
-
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el
 # script
 
