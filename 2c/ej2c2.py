@@ -58,9 +58,9 @@ def get_element_from_list(items_list, index) -> str:
     try:
         return items_list[index]
     except IndexError:
-        return "the specified index is out of the list's range"
+        return "The specified index is out of the items_list's range"
     except Exception as error:
-        return f"An unexpected error has occurred {error}"
+        return f"An unexpected error has occurred: {error}"
 
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
