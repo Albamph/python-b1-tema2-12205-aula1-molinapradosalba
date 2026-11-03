@@ -72,7 +72,7 @@ def tax_calculation_group_1(value: int):
 
 def tax_calculation_global(value: int):
     tax_percent = 24
-    return (tax_percent * value) 100
+    return (tax_percent * value) / 100
    
 
 
