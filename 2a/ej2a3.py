@@ -107,6 +107,7 @@ def main(list_students, new_student_by_value, new_student_by_reference):
     list_by_reference = add_student_by_reference(list_students, new_student_by_reference)
     print("Student list by reference", list_by_reference)
     print("Original student list", list_students)
+    return list_students
     
 
 
